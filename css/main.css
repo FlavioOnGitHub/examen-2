@@ -91,3 +91,9 @@ img {
     display: none;
   }
 }
+
+.contains-icons {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
