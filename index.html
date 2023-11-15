@@ -9,24 +9,45 @@
     <link rel="stylesheet" href="https://use.typekit.net/rfn6apx.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col-xxl-4">
-          <img src="img/logo.svg" alt="" class="logo" />
-        </div>
-        <div class="col-6 col-xxl-8">
-          <div class="nav">
-            <ul>
-              <li>Accueil</li>
-              <li>Evenements</li>
-              <li>Infos</li>
-              <li>Menu</li>
-              <li>Contact</li>
-              <li>Réserver</li>
-            </ul>
+    <nav>
+      <div class="container">
+        <div class="row row-nav">
+          <div class="col-6 col-xxl-4">
+            <img src="img/logo.svg" alt="" class="logo" />
+          </div>
+          <div class="col-6 col-xxl-8">
+            <div class="nav-desktop">
+              <ul>
+                <li>Accueil</li>
+                <li>Evenements</li>
+                <li>Infos</li>
+                <li>Menu</li>
+                <li>Contact</li>
+                <li>Réserver</li>
+              </ul>
+            </div>
+            <div class="nav-mobile">
+              <div class="burger-menu">
+                <div class="bar-burger-menu"></div>
+                <div class="bar-burger-menu"></div>
+                <div class="bar-burger-menu"></div>
+              </div>
+              <div class="mobile-nav-list">
+                <ul>
+                  <li>Accueil</li>
+                  <li>Evenements</li>
+                  <li>Infos</li>
+                  <li>Menu</li>
+                  <li>Contact</li>
+                  <li>Réserver</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </nav>
+    <div class="container">
       <div class="row">
         <div class="col-6 col-xxl-3 order-1 order-xxl-0">
           <img src="img/events.png" alt="" />
@@ -192,5 +213,6 @@
         </div>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>

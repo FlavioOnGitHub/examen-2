@@ -45,9 +45,7 @@ video {
 } */
 
 body {
-  padding-top: 30px;
   padding-bottom: 30px;
-  text-align: center;
   font-family: "Montserrat";
   font-weight: 600;
 }
@@ -95,12 +93,121 @@ body {
 }
 /* finished grid */
 
-.nav ul {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 55px;
+/* nav */
+nav {
+  background-color: #8493a9;
+  padding: 22px 0;
 }
 
-.nav ul {
+@media (max-width: 1399px) {
+  .nav-desktop {
+    display: none;
+  }
+}
+
+.nav-desktop ul {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.nav-desktop ul {
   list-style: none;
+}
+
+.nav-desktop li:last-of-type {
+  border-radius: 5px;
+  border-top: 2px solid #f1eed2;
+  border-right: 5px solid #f1eed2;
+  border-bottom: 2px solid #f1eed2;
+  border-left: 5px solid #f1eed2;
+  background: linear-gradient(
+    90deg,
+    #d9d6b4 -1.49%,
+    #f1eed2 52.86%,
+    #d9d6b4 99.82%
+  );
+  padding: 4px;
+}
+
+.row-nav {
+  align-items: center;
+}
+
+/* burger menu */
+.nav-mobile {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+
+@media (min-width: 1400px) {
+  .nav-mobile {
+    display: none;
+  }
+}
+
+.mobile-nav-list {
+  position: absolute;
+  right: 200px;
+}
+
+.bar-burger-menu {
+  background-color: black;
+  width: 32px;
+  height: 5.2px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.bar-burger-menu:first-of-type {
+  animation-name: bar-1-animation;
+  animation-duration: 2s;
+}
+
+.bar-burger-menu:nth-of-type(2) {
+  animation-name: bar-2-animation;
+  animation-duration: 2s;
+}
+
+.bar-burger-menu:last-of-type {
+  margin-bottom: 0;
+  animation-name: bar-3-animation;
+  animation-duration: 2s;
+}
+
+@keyframes bar-1-animation {
+  from {
+  }
+
+  to {
+    width: 30px;
+    transform: rotate(45deg);
+    margin-bottom: 0;
+  }
+}
+
+@keyframes bar-2-animation {
+  from {
+  }
+
+  to {
+    width: 30px;
+    transform: rotate(-45deg);
+    margin-bottom: 0;
+  }
+}
+
+@keyframes bar-3-animation {
+  from {
+  }
+
+  to {
+    display: none;
+    opacity: 0;
+    transform: rotate(-90deg);
+  }
 }
