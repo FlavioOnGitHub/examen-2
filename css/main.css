@@ -265,6 +265,33 @@ nav {
     flex-flow: row wrap;
     justify-content: center;
   }
+
+  .text-slider {
+    background-color: black;
+    color: #8493a9;
+    white-space: nowrap; /*Don't modify*/
+    padding-bottom: 18px;
+  }
+
+  .text-slider span {
+    display: inline-block;
+    animation: slider 20s linear infinite;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  @keyframes slider {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @media (min-width: 1400px) {
@@ -326,6 +353,9 @@ nav {
   .text-slider {
     background-color: black;
     color: #8493a9;
+    white-space: nowrap; /*Don't modify*/
+    padding-bottom: 18px;
+    padding-top: 18px;
   }
 
   .text-slider span {
@@ -337,5 +367,14 @@ nav {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+  }
+
+  @keyframes slider {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
   }
 }
