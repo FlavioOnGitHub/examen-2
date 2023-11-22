@@ -754,9 +754,13 @@ main {
     height: 370px;
     object-fit: cover;
     border-radius: 25px;
+    display: block;
+    margin: auto;
   }
 
-  .main-second-section p {
+  .food-1,
+  .food-2,
+  .food-3 {
     border: 8px solid #5d6883;
     background-color: #8493a9;
     padding: 18px;
@@ -768,7 +772,169 @@ main {
     line-height: normal;
     text-transform: uppercase;
     text-align: center;
-    display: inline-block;
+    margin: auto;
     margin-bottom: 80px;
+    margin-top: -50px;
+    display: block;
+  }
+
+  .food-1 {
+    width: 200px;
+  }
+
+  .food-2 {
+    width: 160px;
+  }
+
+  .food-3 {
+    width: 200px;
+    margin-bottom: 60px;
+  }
+
+  .menu-button-1 {
+    border-radius: 10px;
+    border-top: 2px solid #f1eed2;
+    border-right: 6px solid #f1eed2;
+    border-bottom: 2px solid #f1eed2;
+    border-left: 6px solid #f1eed2;
+    background: linear-gradient(
+      270deg,
+      #d9d6b4 0%,
+      #f1eed2 48.96%,
+      #d9d6b4 100%
+    );
+    color: #141414;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 17px;
+    width: 256px;
+    margin: auto;
+    margin-bottom: 26px;
+  }
+
+  .menu-button-2 {
+    border-radius: 10px;
+    border-top: 2px solid #f1eed2;
+    border-right: 6px solid #f1eed2;
+    border-bottom: 2px solid #f1eed2;
+    border-left: 6px solid #f1eed2;
+    background: linear-gradient(
+      270deg,
+      #d9d6b4 0%,
+      #f1eed2 48.96%,
+      #d9d6b4 100%
+    );
+    color: #141414;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 17px;
+    width: 256px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1400px) {
+  .main-second-section {
+    padding: 110px 0 90px 0;
+  }
+
+  .food-img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+  }
+
+  .food-1,
+  .food-2,
+  .food-3 {
+    border: 8px solid #5d6883;
+    background-color: #8493a9;
+    padding: 18px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: -50px;
+    display: block;
+    height: 120px;
+  }
+
+  .food-1 {
+    width: 80%;
+  }
+
+  .food-2 {
+    width: 80%;
+  }
+
+  .food-3 {
+    width: 80%;
+  }
+
+  .menu-button-1 {
+    border-radius: 10px;
+    border-top: 2px solid #f1eed2;
+    border-right: 6px solid #f1eed2;
+    border-bottom: 2px solid #f1eed2;
+    border-left: 6px solid #f1eed2;
+    background: linear-gradient(
+      90deg,
+      #d9d6b4 0%,
+      #f1eed2 51.56%,
+      #d9d6b4 100%
+    );
+    color: #141414;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 17px;
+    width: 380px;
+    margin: auto;
+  }
+
+  .menu-button-2 {
+    border-radius: 10px;
+    border-top: 2px solid #f1eed2;
+    border-right: 6px solid #f1eed2;
+    border-bottom: 2px solid #f1eed2;
+    border-left: 6px solid #f1eed2;
+    background: linear-gradient(
+      90deg,
+      #d9d6b4 0%,
+      #f1eed2 51.56%,
+      #d9d6b4 100%
+    );
+    color: #141414;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 17px;
+    width: 380px;
+    margin: auto;
   }
 }
