@@ -277,14 +277,15 @@ nav {
     justify-content: center;
   }
 
-  .text-slider {
+  .text-slider-top {
+    overflow: hidden;
     background-color: black;
     color: #8493a9;
     white-space: nowrap;
     padding-bottom: 18px;
   }
 
-  .text-slider span {
+  .text-slider-top span {
     display: inline-block;
     animation: slider 20s linear infinite;
     text-align: center;
@@ -361,7 +362,8 @@ nav {
     z-index: 1;
   }
 
-  .text-slider {
+  .text-slider-top {
+    overflow: hidden;
     background-color: black;
     color: #8493a9;
     white-space: nowrap;
@@ -369,7 +371,7 @@ nav {
     padding-top: 18px;
   }
 
-  .text-slider span {
+  .text-slider-top span {
     display: inline-block;
     animation: slider 20s linear infinite;
     text-align: center;
@@ -484,7 +486,8 @@ nav {
 }
 
 /* main */
-main {
+.main-first-section,
+.main-second-section {
   background-image: url(../img/background-img.png);
   background-size: cover;
 }
@@ -626,7 +629,7 @@ main {
     line-height: normal;
   }
 
-  .flex-event {
+  .event-card-flex-container {
     display: flex;
     flex-flow: row;
     justify-content: space-between;
