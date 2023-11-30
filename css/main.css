@@ -92,7 +92,7 @@ nav {
   padding: 22px 0;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 991px) {
   .nav-desktop {
     display: none;
   }
@@ -137,7 +137,7 @@ nav {
   justify-content: flex-end;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   .nav-mobile {
     display: none;
   }
