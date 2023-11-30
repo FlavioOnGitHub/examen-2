@@ -237,7 +237,27 @@ nav {
 /* end of nav */
 
 /* header */
-@media (max-width: 1399px) {
+@media (min-width: 768px) {
+  header span {
+    font-size: 16px;
+  }
+
+  .text-slider-top span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  header span {
+    font-size: 11px;
+  }
+
+  .text-slider-top span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1199px) {
   header {
     background-color: black;
     padding: 36px 0px 27px 0px;
@@ -253,7 +273,6 @@ nav {
     color: #141414;
     text-align: center;
     font-family: Montserrat;
-    font-size: 11px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -290,7 +309,6 @@ nav {
     animation: slider 20s linear infinite;
     text-align: center;
     font-family: Montserrat;
-    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -306,7 +324,7 @@ nav {
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   header {
     background-image: url(../img/header-bck.png);
     background-color: black;
@@ -398,6 +416,28 @@ nav {
   width: 100%;
 }
 
+@media (max-width: 991px) {
+  .intro-text {
+    font-size: 14px;
+    margin-top: -50px;
+  }
+
+  .intro-button {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro-text {
+    font-size: 20px;
+    margin-top: -120px;
+  }
+
+  .intro-button {
+    font-size: 14px;
+  }
+}
+
 @media (min-width: 1400px) {
   .intro-text {
     color: #fff;
@@ -446,13 +486,11 @@ nav {
   .intro-text {
     color: #fff;
     font-family: Montserrat;
-    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     background: #333034;
     padding: 15px;
-    margin-top: -50px;
     margin-bottom: 70px;
   }
 
@@ -475,7 +513,6 @@ nav {
     color: #141414;
     text-align: center;
     font-family: Montserrat;
-    font-size: 11px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -492,7 +529,7 @@ nav {
   background-size: cover;
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 991px) {
   .event-1-img,
   .event-2-img,
   .event-3-img {
@@ -501,6 +538,64 @@ nav {
     margin: auto;
   }
 
+  .event-text h3,
+  .event-text p,
+  .event-text span {
+    font-size: 16px;
+  }
+
+  .event-1 {
+    width: 230px;
+  }
+
+  .event-2 {
+    width: 250px;
+  }
+
+  .event-3 {
+    width: 210px;
+  }
+
+  .more-events-button {
+    font-size: 11px;
+    width: 210px;
+  }
+}
+
+@media (min-width: 992px) {
+  .event-1-img,
+  .event-2-img,
+  .event-3-img {
+    width: 600px;
+    display: block;
+    margin: auto;
+  }
+
+  .event-text h3,
+  .event-text p,
+  .event-text span {
+    font-size: 23px;
+  }
+
+  .event-1 {
+    width: 320px;
+  }
+
+  .event-2 {
+    width: 340px;
+  }
+
+  .event-3 {
+    width: 310px;
+  }
+
+  .more-events-button {
+    font-size: 16px;
+    width: 275px;
+  }
+}
+
+@media (max-width: 1399px) {
   .moon-icon {
     display: none;
   }
@@ -518,7 +613,6 @@ nav {
   .event-text h3 {
     color: #000;
     font-family: Montserrat;
-    font-size: 16px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -528,7 +622,6 @@ nav {
   .event-text p {
     color: #000;
     font-family: Montserrat;
-    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -537,22 +630,9 @@ nav {
   .event-text span {
     color: #000;
     font-family: Montserrat;
-    font-size: 16px;
     font-style: italic;
     font-weight: 500;
     line-height: normal;
-  }
-
-  .event-1 {
-    width: 230px;
-  }
-
-  .event-2 {
-    width: 250px;
-  }
-
-  .event-3 {
-    width: 210px;
   }
 
   .event-3 {
@@ -573,7 +653,6 @@ nav {
     );
     color: #141414;
     font-family: Montserrat;
-    font-size: 11px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -581,7 +660,6 @@ nav {
     text-align: center;
     padding: 14px;
     display: block;
-    width: 210px;
     margin: auto;
     margin-bottom: 78px;
   }
