@@ -2,6 +2,10 @@
   --col-color: red;
 }
 
+a {
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +14,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -452,7 +457,7 @@ nav {
     margin-bottom: 165px;
   }
 
-  .intro-text p:first-of-type {
+  .intro-text p {
     margin-bottom: 75px;
   }
 
@@ -494,7 +499,7 @@ nav {
     margin-bottom: 70px;
   }
 
-  .intro-text p:first-of-type {
+  .intro-text p {
     margin-bottom: 50px;
   }
 
