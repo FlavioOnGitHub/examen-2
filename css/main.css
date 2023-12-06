@@ -49,7 +49,7 @@ body {
   font-weight: 600;
 }
 
-@media (min-width: 1401px) {
+@media (min-width: 1200px) {
   .icons-xxl {
     display: inline;
     padding-top: 40px;
@@ -64,7 +64,7 @@ body {
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1199px) {
   .icons-xs {
     display: inline;
     margin-bottom: 30px;
@@ -557,8 +557,8 @@ nav {
   }
 
   .more-events-button {
-    font-size: 11px;
-    width: 210px;
+    font-size: 13px;
+    width: 240px;
   }
 }
 
@@ -853,7 +853,7 @@ nav {
   }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 991px) {
   .main-second-section {
     padding: 45px 0 90px 0;
   }
@@ -889,6 +889,106 @@ nav {
 
   .food-1 {
     width: 200px;
+  }
+
+  .food-2 {
+    width: 160px;
+  }
+
+  .food-3 {
+    width: 200px;
+    margin-bottom: 60px;
+  }
+
+  .menu-button-1 {
+    border-radius: 10px;
+    border-top: 2px solid #f1eed2;
+    border-right: 6px solid #f1eed2;
+    border-bottom: 2px solid #f1eed2;
+    border-left: 6px solid #f1eed2;
+    background: linear-gradient(
+      270deg,
+      #d9d6b4 0%,
+      #f1eed2 48.96%,
+      #d9d6b4 100%
+    );
+    color: #141414;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 17px;
+    width: 230px;
+    margin: auto;
+    margin-bottom: 26px;
+  }
+
+  .menu-button-2 {
+    border-radius: 10px;
+    border-top: 2px solid #f1eed2;
+    border-right: 6px solid #f1eed2;
+    border-bottom: 2px solid #f1eed2;
+    border-left: 6px solid #f1eed2;
+    background: linear-gradient(
+      270deg,
+      #d9d6b4 0%,
+      #f1eed2 48.96%,
+      #d9d6b4 100%
+    );
+    color: #141414;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 17px;
+    width: 220px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+  .main-second-section {
+    padding: 60px 0 90px 0;
+  }
+
+  .food-img {
+    width: 300px;
+    height: 370px;
+    object-fit: cover;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+  }
+
+  .food-1,
+  .food-2,
+  .food-3 {
+    border: 8px solid #5d6883;
+    background-color: #8493a9;
+    padding: 18px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 80px;
+    margin-top: -50px;
+    display: block;
+  }
+
+  .food-1 {
+    width: 200px;
+    height: 101px;
   }
 
   .food-2 {
@@ -954,7 +1054,7 @@ nav {
 
 @media (min-width: 1400px) {
   .main-second-section {
-    padding: 110px 0 90px 0;
+    padding: 110px 0 120px 0;
   }
 
   .food-img {
@@ -975,7 +1075,7 @@ nav {
     font-family: Montserrat;
     font-size: 26px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
     margin: auto;
@@ -1012,7 +1112,7 @@ nav {
     color: #141414;
     text-align: center;
     font-family: Montserrat;
-    font-size: 25px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1037,7 +1137,7 @@ nav {
     color: #141414;
     text-align: center;
     font-family: Montserrat;
-    font-size: 25px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1050,9 +1150,9 @@ nav {
 /* end of main */
 
 /* start of footer */
-@media (max-width: 1399px) {
+@media (max-width: 991px) {
   footer {
-    padding-top: 27px;
+    padding-top: 35px;
     background-color: #8493a9;
   }
 
@@ -1112,25 +1212,25 @@ nav {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 10px 0 10px 0;
+    padding: 14px 0 14px 0;
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 992px) {
   footer {
-    padding-top: 60px;
+    padding-top: 40px;
     background-color: #8493a9;
   }
 
   footer .logo {
-    margin-bottom: 75px;
-    width: 260px;
+    margin-bottom: 55px;
+    width: 200px;
   }
 
   footer h3 {
     color: #000;
     font-family: Montserrat;
-    font-size: 28px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -1140,7 +1240,7 @@ nav {
   footer li {
     color: #000;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -1151,7 +1251,7 @@ nav {
   footer p {
     color: #000;
     font-family: Montserrat;
-    font-size: 24px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -1174,10 +1274,33 @@ nav {
     margin: 0;
     color: #000;
     font-family: Montserrat;
-    font-size: 15px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     padding: 20px 0 20px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  footer {
+    padding-top: 60px;
+  }
+
+  footer .logo {
+    width: 260px;
+    margin-bottom: 75px;
+  }
+
+  footer h3 {
+    font-size: 28px;
+  }
+
+  footer li {
+    font-size: 24px;
+  }
+
+  footer p {
+    font-size: 24px;
   }
 }
