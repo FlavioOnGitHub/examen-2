@@ -55,6 +55,12 @@ body {
   padding-top: 68px;
 }
 
+@media (min-width: 992px) {
+  body {
+    padding-top: 78px;
+  }
+}
+
 @media (min-width: 1200px) {
   .icons-xxl {
     display: inline;
@@ -106,6 +112,15 @@ nav {
   .nav-desktop {
     display: none;
   }
+
+  nav .logo {
+    position: fixed;
+    left: 30px;
+  }
+
+  nav {
+    height: 68px;
+  }
 }
 
 .nav-desktop ul {
@@ -134,6 +149,24 @@ nav {
     #d9d6b4 99.82%
   );
   padding: 4px;
+  transition: scale 0.4s ease-in-out;
+}
+
+.nav-desktop li a {
+  text-decoration: underline rgba(0, 0, 0, 0) solid 2px;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.nav-desktop li a:hover {
+  text-decoration: underline rgba(0, 0, 0, 0.65) solid 2px;
+}
+
+.nav-desktop li:last-of-type a:hover {
+  text-decoration: underline rgba(0, 0, 0, 0) solid 0px;
+}
+
+.nav-desktop li:last-of-type:hover {
+  scale: 1.05;
 }
 
 .row-nav {
@@ -270,6 +303,7 @@ nav {
   top: 0;
   backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .not-blurr {
@@ -454,11 +488,37 @@ nav {
     }
   }
 }
+
+header img {
+  transition: scale 0.3s ease-in-out, filter 0.3s;
+}
+
+header img:hover {
+  scale: 1.03;
+  filter: contrast(115%);
+}
+
+header span {
+  transition: scale 0.3s ease-in-out;
+  z-index: 1;
+}
+
+header span:hover {
+  scale: 1.03;
+}
 /* end of the header */
 
 /* start of main */
 .intro-img {
   width: 100%;
+}
+
+.intro-button {
+  transition: scale 0.3s ease-in-out;
+}
+
+.intro-button:hover {
+  scale: 1.05;
 }
 
 @media (max-width: 991px) {
@@ -786,7 +846,7 @@ nav {
     margin-bottom: 80px;
   }
 
-  .z-index-class {
+  .z-index-event-2 {
     z-index: 1;
   }
 
@@ -818,6 +878,33 @@ nav {
   }
 }
 
+.event-1-img,
+.event-2-img,
+.event-3-img {
+  transition: filter 0.3s ease-in-out, scale 0.3s;
+  z-index: 0;
+}
+
+.z-index-event-1,
+.z-index-event-2,
+.z-index-event-3 {
+  z-index: 1;
+}
+
+.event-1-img:hover,
+.event-2-img:hover,
+.event-3-img:hover {
+  filter: contrast(115%);
+  scale: 1.03;
+}
+
+.more-events-button {
+  transition: scale 0.3s ease-in-out;
+}
+
+.more-events-button:hover {
+  scale: 1.03;
+}
 /* end of the event-section */
 
 /* start of the menu */
@@ -1025,7 +1112,7 @@ nav {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
     margin: auto;
     margin-bottom: 80px;
     margin-top: -50px;
@@ -1193,6 +1280,31 @@ nav {
     margin: auto;
   }
 }
+
+.food-img {
+  transition: scale 0.3s ease-in-out, filter 0.3s;
+}
+
+.food-img:hover {
+  scale: 1.03;
+  filter: contrast(115%);
+}
+
+.z-index-food-1,
+.z-index-food-2,
+.z-index-food-3 {
+  z-index: 1;
+}
+
+.menu-button-1,
+.menu-button-2 {
+  transition: scale 0.3s ease-in-out;
+}
+
+.menu-button-1:hover,
+.menu-button-2:hover {
+  scale: 1.03;
+}
 /* end of main */
 
 /* start of footer */
@@ -1349,5 +1461,17 @@ nav {
   footer p {
     font-size: 24px;
   }
+}
+
+footer img {
+  transition: scale 0.3s ease-in-out;
+}
+
+footer img:hover {
+  scale: 1.08;
+}
+
+footer .logo:hover {
+  scale: none;
 }
 /* end of footer */
