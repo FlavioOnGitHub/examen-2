@@ -4,11 +4,19 @@ window.onload = () => {
 
 var burgerIcon = document.querySelector(".burger-menu");
 var navMenu = document.querySelector(".mobile-nav-list");
-var burgerBar = document.querySelector(".bar-burger-menu");
+var blurrPage = document.querySelector(".page-blurr");
 
 var toggleMenu = function toggleMenu() {
-  navMenu.classList.toggle("is-shown");
-  burgerBar.classList.toggle("is-active");
+  navMenu.classList.toggle("is-hidden");
+  burgerIcon.classList.toggle("burger-closed");
+  blurrPage.classList.toggle("not-blurr");
+};
+
+var closeMenu = function closeMenu() {
+  navMenu.classList.toggle("is-hidden");
+  burgerIcon.classList.toggle("burger-closed");
+  blurrPage.classList.toggle("not-blurr");
 };
 
 burgerIcon.addEventListener("click", toggleMenu);
+blurrPage.addEventListener("click", closeMenu);
